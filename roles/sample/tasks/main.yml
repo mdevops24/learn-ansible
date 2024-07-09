@@ -1,6 +1,3 @@
-- name: Sample playbook
-  hosts: all
-  tasks:
-    - name: Print hello world
-      ansible.builtin.debug:
-        msg: HelloWorld role sample
+- name: Print hello world
+  ansible.builtin.debug:
+    msg: HelloWorld role sample
