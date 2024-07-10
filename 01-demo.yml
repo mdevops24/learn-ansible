@@ -16,9 +16,9 @@
         register: file_content
 
       - name: Update MongoDB Conf file
-        replace:
+        lineinfile:
           path: /tmp/example.txt
           regexp: '127.0.0.1'
           replace: '0.0.0.0'
-          count: 1
-          #state: present
+          backrefs: yes
+          state: present
