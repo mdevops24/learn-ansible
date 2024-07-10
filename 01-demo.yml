@@ -10,10 +10,10 @@
         ansible.builtin.debug:
             msg: HelloWorld
 
-      - name: Read the content of the file
-        slurp:
-            src: /tmp/example.txt  # Replace with the path to your file
-        register: file_content
+#      - name: Read the content of the file
+#        slurp:
+#            src: /tmp/example.txt  # Replace with the path to your file
+#        register: file_content
 
       - name: Update MongoDB Conf file
         lineinfile:
