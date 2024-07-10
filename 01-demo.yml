@@ -10,10 +10,15 @@
         ansible.builtin.debug:
             msg: HelloWorld
 
+      - name: Read the content of the file
+          slurp:
+            src: /tmp/example.txt  # Replace with the path to your file
+          register: file_content
+
       - name: Update MongoDB Conf file
         replace:
           path: /tmp/example.txt
           regexp: '127.0.0.1'
           replace: '0.0.0.0'
           count: 1
-          state: present
+          #state: present
