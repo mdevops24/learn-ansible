@@ -1,4 +1,5 @@
 - name: Replace the first occurrence of old_string with new_string
+    become: true
     replace:
       path: /tmp/example.txt  # Replace with the path to your file
       regexp: 'old_string'
