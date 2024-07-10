@@ -13,5 +13,6 @@
       - name: Update MongoDB Conf file
         ansible.builtin.replace:
           path: /tmp/example.txt
-          regexp: '127.0.0.1'
-          replace: '0.0.0.0'
+          regexp: '0.0.0.0'
+          replace: '127.0.0.1'
+          count: 1
