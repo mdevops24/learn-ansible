@@ -17,7 +17,7 @@
 
       - name: Update MongoDB Conf file
         lineinfile:
-          path: /tmp/mongod.conf
+          path: /tmp/mongod.txt
           regexp: '127.0.0.1'
           line: '0.0.0.0'
           firstmatch: yes
