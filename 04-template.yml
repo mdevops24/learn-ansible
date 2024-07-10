@@ -1,0 +1,4 @@
+- name: Demo template
+  ansible.builtin.template:
+    src: hellp.txt
+    dest: /tmp/h2.txt
