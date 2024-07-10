@@ -20,5 +20,5 @@
           path: /tmp/example.txt
           regexp: '127.0.0.1'
           line: '0.0.0.0'
-          backrefs: yes
+          firstmatch: yes
           state: present
