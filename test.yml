@@ -3,7 +3,7 @@
   become: true
 
 - name: Replace the first occurrence of old_string with new_string
-    replace:
+  replace:
       path: /tmp/example.txt  # Replace with the path to your file
       regexp: 'old_string'
       replace: 'new_string'
