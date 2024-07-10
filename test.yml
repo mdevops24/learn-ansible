@@ -2,7 +2,7 @@
   hosts: all
   become: true
 
-- name: Replace the first occurrence of old_string with new_string
+- name: Replace
   ansible.builtin.replace:
     path: /tmp/example.txt  # Replace with the path to your file
     regexp: 'old_string'
