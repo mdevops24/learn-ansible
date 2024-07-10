@@ -11,9 +11,9 @@
             msg: HelloWorld
 
       - name: Read the content of the file
-          slurp:
+        slurp:
             src: /tmp/example.txt  # Replace with the path to your file
-          register: file_content
+        register: file_content
 
       - name: Update MongoDB Conf file
         replace:
