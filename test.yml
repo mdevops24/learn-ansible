@@ -1,6 +1,6 @@
 - name: test
   hosts: all
-    become: true
+  become: true
 
 - name: Replace the first occurrence of old_string with new_string
     replace:
