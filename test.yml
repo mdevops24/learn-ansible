@@ -12,3 +12,8 @@
     # Check if the file has been modified
     #when: "'old_string' in file_content.content | b64decode"
 
+- name: Update MongoDB Conf file
+  ansible.builtin.replace:
+    path: /etc/mongod.conf
+    regexp: '127.0.0.1'
+    replace: '0.0.0.0'
