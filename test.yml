@@ -1,0 +1,10 @@
+- name: Replace the first occurrence of old_string with new_string
+    replace:
+      path: /tmp/example.txt  # Replace with the path to your file
+      regexp: 'old_string'
+      replace: 'new_string'
+      count: 1  # Replace only the first occurrence
+
+    # Check if the file has been modified
+    #when: "'old_string' in file_content.content | b64decode"
+
