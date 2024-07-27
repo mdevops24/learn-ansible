@@ -8,7 +8,7 @@
   tasks:
       - name: Print hello world
         ansible.builtin.debug:
-            msg: HelloWorld
+            msg: "uname -a"
 
 #      - name: Read the content of the file
 #        slurp:
